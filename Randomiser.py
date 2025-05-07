@@ -147,7 +147,7 @@ st.markdown(
 
 st.write('&nbsp;')  # empty line
 st.write(
-    "Fiona's common sense explanation ( 1 paragraph) of the subject matter")
+    "Add info text")
 st.write('&nbsp;')  # empty line
 
 st.markdown('''##  File Upload''')
