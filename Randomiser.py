@@ -115,10 +115,10 @@ def randomise_me(mytype='csv'):
                 with zipfile.ZipFile(buf, "x") as csv_zip:
                     for i, tempdf in enumerate(st.session_state.outdfs):
                         if mytype=='csv':
-                            csv_zip.writestr("batch_{}_{}.csv".format(i), pd.DataFrame(tempdf).to_csv())
+                            csv_zip.writestr("batch_{}_{}.csv".format(i, tempdf.shape[0]), pd.DataFrame(tempdf).to_csv())
                         else:
-                            csv_zip.writestr("batch_{}.ris".format(i), rispy.dumps(list(tempdf["refs"])))
-                            csv_zip.writestr("batch_{}.csv".format(i), pd.DataFrame(list(tempdf["refs"])).to_csv())
+                            csv_zip.writestr("batch_{}_{}.ris".format(i, tempdf.shape[0]), rispy.dumps(list(tempdf["refs"])))
+                            csv_zip.writestr("batch_{}_{}.csv".format(i, tempdf.shape[0]), pd.DataFrame(list(tempdf["refs"])).to_csv())
 
                 with col3:
                     st.download_button(
@@ -143,12 +143,15 @@ def randomise_me(mytype='csv'):
 #     st.session_state["mystate"]=st.number_input("Enter random seed", value=48, max_value=1000, min_value=1, step=1)
 
 st.markdown(
-    '''# 🎲 :rainbow[RefRandomiser]: An app to split and randomise data''')
+    '''# 🎲 :rainbow[RefRandomiser]: A tool to split and randomise search results''')
 
-st.write('&nbsp;')  # empty line
-st.write(
-    "Add info text")
-st.write('&nbsp;')  # empty line
+
+st.markdown("""
+An explanation of why randomisation and independent dataset splits are important can be found [here](Rationale). 
+""", unsafe_allow_html=True)
+
+
+st.write("A tutorial video that shows how to use this app can be found on the bottom of this page.")
 
 st.markdown('''##  File Upload''')
 uploaded_file = st.file_uploader("Upload RIS or CSV file")
