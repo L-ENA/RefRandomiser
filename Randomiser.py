@@ -188,7 +188,7 @@ if uploaded_file is not None:
 
 
         else:
-            st.write("Please upload a RIS or CSV file! Encoding errors may appear on files that are not utf-8 encoded")
+            st.write("Please upload a RIS or CSV fil. Encoding errors may appear on files that are not utf-8 encoded")
 
     # except:
     #     pass

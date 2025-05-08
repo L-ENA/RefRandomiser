@@ -4,7 +4,7 @@ st.markdown(
 
 st.write('&nbsp;')  # empty line
 st.markdown("## When to randomise your records")
-st.write("In evidence synthesis the focus of our research is secondary data (our search results and included studies).  As in primary research, it is sometime necessary to randomise our data. Search results are ordered by the tools we use, they may be in date or alphabetical order.  This means that a non-random selection of our records will not be representative of the whole set of records.")
+st.write("In evidence synthesis the focus of our research is secondary data (our search results and the included studies).  As in primary research, it is sometime necessary to randomise our data. Search results are ordered by the tools we use, they may be in date or alphabetical order.  This means that a non-random selection of our records will not be representative of the whole set of records.")
 st.write("Two circumstances where selecting a random sample of our deduplicated records is necessary include:")
 st.write("1)	When a proportion of records are selected to test agreement between reviewers (usually 20%)")
 st.write("2)	When an AI generated algorithm is being developed and tested.  In these circumstances, usually three sets of random records need to be selected in order to ensure that the tool is developed with reduced risk of overfitting, data leakage and biased evaluation.")

@@ -14,7 +14,7 @@ st.write("[Dr. Matt Grainger](https://www.nina.no/english/Contact/Employees/Empl
 
 st.write("Please contact lena.schmidt@ucl.ac.uk with any queries or feedback about the tool.")
 
-st.write("If you found our tool helpful, you can cite it ....")
+st.write("If you found our tool helpful, you can cite it ..")
 
 
 
