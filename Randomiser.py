@@ -37,7 +37,7 @@ if "mystate" not in st.session_state:
 def clear_text():
 
     st.session_state.my_text = st.session_state.widget
-    st.session_state.widget = "0"
+    st.session_state.widget = ""
 
 def randomise_me(mytype='csv'):
 
@@ -84,14 +84,17 @@ def randomise_me(mytype='csv'):
 
     for o in st.session_state.outtext:
         st.markdown(o)
-    st.markdown("## **:red[{}%]** of dataset allocated so far; **:green[{}%]** left".format(sum(st.session_state.splitvalues), 100-sum(st.session_state.splitvalues)))
+    if sum(st.session_state.splitvalues)<100:
+        st.markdown("## **:red[{}%]** of dataset allocated so far; **:green[{}%]** left".format(sum(st.session_state.splitvalues), 100-sum(st.session_state.splitvalues)))
+    else:
+        st.markdown("## **:green[100% allocated!]** Please click 'Submit' above to create batches.")
 
 
 
 
     if sum(st.session_state.splitvalues) == 100:
         with col2:
-            if st.button("✔️ Submit", type='secondary'):
+            if st.button("✔️ Submit", type='primary'):
                 #print("submitted")
 
                 for i, va in enumerate(st.session_state.splitvalues):
