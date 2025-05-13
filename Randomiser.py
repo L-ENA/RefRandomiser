@@ -183,12 +183,13 @@ if uploaded_file is not None:
 
             st.session_state.df = pd.DataFrame()
             st.session_state.df["refs"] = entries
+            st.session_state.df = st.session_state.df.sample(frac=1.0, random_state=st.session_state.mystate)
 
             randomise_me(mytype='ris')
 
 
         else:
-            st.write("Please upload a RIS or CSV fil. Encoding errors may appear on files that are not utf-8 encoded")
+            st.write("Please upload a RIS or CSV file. Encoding errors may appear on files that are not utf-8 encoded")
 
     # except:
     #     pass
