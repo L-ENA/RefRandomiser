@@ -12,8 +12,9 @@ st.write("[Dr. Fiona Campbell (Newcastle University)](https://www.ncl.ac.uk/medi
 st.write("[Dr. Neal Haddaway (Stockholm Environment Institute)](https://www.sei.org/people/neal-haddaway/)")
 st.write("[Dr. Matt Grainger (Norsk Institutt for Naturforskning)](https://www.nina.no/english/Contact/Employees/Employee-info?AnsattID=16028)")
 
+st.write('&nbsp;')  # empty line
 st.write("Please contact lena.schmidt@ucl.ac.uk with any queries or feedback about the tool.")
-
+st.write('&nbsp;')  # empty line
 st.write("If you found our tool helpful, you can refer to our whitepaper here: (add link)")
 
 
