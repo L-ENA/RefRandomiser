@@ -150,7 +150,7 @@ st.markdown(
 
 
 st.markdown("""
-An explanation of why randomisation and independent dataset splits are important can be found [here](Rationale) and our whitepaper to cite [here](About) if you find this tool helpful. 
+An explanation of why randomisation and independent dataset splits are important can be found [here](Rationale) and our tool information sheet to cite [here](About) if you find this tool helpful. 
 """, unsafe_allow_html=True)
 
 

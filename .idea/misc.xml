@@ -3,4 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Randomiser" />
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Eppi-Vis" project-jdk-type="Python SDK" />
 </project>
