@@ -15,7 +15,7 @@ st.write("[Dr. Neal Haddaway (www.nealhaddaway.com)](www.nealhaddaway.com)")
 st.write('&nbsp;')  # empty line
 st.write("Please contact lena.schmidt@ucl.ac.uk with any queries or feedback about the tool.")
 st.write('&nbsp;')  # empty line
-st.write("If you found our tool helpful, you can refer to our [tool information sheet](https://osf.io/uanz4)")
+st.write("If you found our tool helpful, you can refer to our [tool information sheet](https://osf.io/fkj46)")
 
 st.markdown(":gray[_Schmidt L., Grainger M.J., Haddaway N., Campbell F (2025, May 15). RefRandomiser: A tool to split and randomise data [Tool information Sheet]. Retrieved from osf.io/uanz4. DOI 10.17605/OSF.IO/UANZ4_]")
 
